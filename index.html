@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List Simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="caixa-principal">
+        <header>
+            <h1>Lista de Tarefas</h1>
+        </header>
+
+        <!-- Formulário para cadastrar uma nova tarefa -->
+        <form id="formulario-tarefa" class="form-tarefa">
+            <div class="campo">
+                <label for="titulo">Título</label>
+                <input type="text" id="titulo" placeholder="Ex: Estudar JavaScript" required minlength="2">
+            </div>
+
+            <div class="campo">
+                <label for="descricao">Descrição</label>
+                <textarea id="descricao" rows="3" placeholder="Detalhes da tarefa" required minlength="3"></textarea>
+            </div>
+
+            <div class="campo">
+                <label for="prioridade">Prioridade</label>
+                <select id="prioridade" required>
+                    <option value="Baixa">Baixa</option>
+                    <option value="Media">Média</option>
+                    <option value="Alta">Alta</option>
+                </select>
+            </div>
+
+            <button type="submit" id="botao-salvar">Adicionar tarefa</button>
+            <p id="mensagem-formulario" class="mensagem-formulario"></p>
+        </form>
+
+        <section>
+            <h2 id="titulo-tarefas">Tarefas cadastradas</h2>
+
+            <div class="campo campo-busca">
+                <label for="busca-titulo">Buscar por título</label>
+                <input type="text" id="busca-titulo" placeholder="Digite para filtrar tarefas">
+            </div>
+
+            <ul id="lista-tarefas" class="lista-tarefas"></ul>
+        </section>
+
+        <footer>
+            <p>Trabalho acadêmico - Uninter</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

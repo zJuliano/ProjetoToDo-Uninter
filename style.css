@@ -1,0 +1,110 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background: #f2f2f2;
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+}
+
+.caixa-principal {
+	width: 100%;
+	max-width: 650px;
+	background: white;
+	padding: 16px;
+	border: 1px solid #ccc;
+}
+
+h1, h2 {
+	margin-top: 0;
+}
+
+header {
+	margin-bottom: 14px;
+}
+
+footer {
+	margin-top: 16px;
+	font-size: 13px;
+	color: #555;
+}
+
+footer p {
+	margin: 0;
+}
+
+.form-tarefa {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-bottom: 20px;
+}
+
+.campo {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.campo-busca {
+	margin-bottom: 12px;
+}
+
+input, textarea, select, button {
+	padding: 8px;
+	font-size: 14px;
+	border: 1px solid #aaa;
+}
+
+button {
+	cursor: pointer;
+	background: #e8e8e8;
+}
+
+.mensagem-formulario {
+	margin: 0;
+	font-size: 14px;
+	color: #c00000;
+}
+
+.lista-tarefas {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.item-tarefa {
+	border: 1px solid #d0d0d0;
+	background: #fafafa;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.titulo-tarefa {
+	margin: 0 0 8px 0;
+}
+
+.descricao-tarefa, .prioridade-tarefa, .status-tarefa, .data-tarefa {
+	margin: 6px 0;
+}
+
+.acoes-tarefa {
+	display: flex;
+	gap: 6px;
+	flex-wrap: wrap;
+	margin-top: 8px;
+}
+
+.concluida .titulo-tarefa, .concluida .descricao-tarefa {
+	text-decoration: line-through;
+	color: #666;
+}
+
+.mensagem-vazia {
+	margin: 0;
+	color: #555;
+}
